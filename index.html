@@ -31,11 +31,11 @@
                         Programação
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Aula01.html" onclick="showLoginModal(event, 'Aula01.html')">Aula1</a>
-                        <a class="dropdown-item" href="Aula02.html" onclick="showLoginModal(event, 'Aula02.html')">Aula2</a>
-                        <a class="dropdown-item" href="Aula03.html" onclick="showLoginModal(event, 'Aula03.html')">Aula3</a>
-                        <a class="dropdown-item" href="Aula04.html" onclick="showLoginModal(event, 'Aula04.html')">Aula4</a>
-                        <a class="dropdown-item" href="Aula05.html" onclick="showLoginModal(event, 'Aula05.html')">Aula5</a>
+                        <a class="dropdown-item" href="#" onclick="showLoginModal(event, 'https://curriculorenatovalente2024.my.canva.site/renatoaula1python')">Aula1</a>
+                        <a class="dropdown-item" href="#" onclick="showLoginModal(event, 'https://curriculorenatovalente2024.my.canva.site/renatoaula2python')">Aula2</a>
+                        <a class="dropdown-item" href="#" onclick="showLoginModal(event, 'https://curriculorenatovalente2024.my.canva.site/renatoaula3python')">Aula3</a>
+                        <a class="dropdown-item" href="#" onclick="showLoginModal(event, 'https://curriculorenatovalente2024.my.canva.site/renatoaula4python')">Aula4</a>
+                        <a class="dropdown-item" href="#" onclick="showLoginModal(event, 'https://curriculorenatovalente2024.my.canva.site/renatoaula5python')">Aula5</a>
                     </div>
                 </li>
             </ul>
@@ -87,10 +87,12 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if(username === 'RDV' && password === '1234') {
+            if(username === 'python' && password === 'Bicudo@Py#A1') {
                 alert('Login bem-sucedido!');
                 $('#loginModal').modal('hide');
-                window.location.href = redirectUrl; // Redireciona para a URL armazenada
+                setTimeout(function() {
+                    window.location.href = redirectUrl; // Redireciona para a URL armazenada após ocultar o modal
+                }, 500); // Pequeno atraso para garantir que o modal seja ocultado antes do redirecionamento
             } else {
                 alert('Usuário ou senha incorretos!');
             }
